@@ -1,7 +1,7 @@
 h1 {
      font-family: 'Dosis', sans-serif;
     font-size: 4em;
-    margin-left: 60px;
+    margin-left: 4.1vw;
      
     
 }
@@ -93,11 +93,3 @@ width: 100vw;
 }
     
 }
-
-@media only screen and (max-width: 400px) {
-    img{
-    width: 50px;
-    position: fixed;
-    right: 2.5em;
-    top: 4em;
-    }}

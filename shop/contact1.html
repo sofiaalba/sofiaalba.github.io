@@ -5,37 +5,66 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lantern Restaurant</title>
+    <title>Lab 5: Responsive Design</title>
     <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="contact1.css">
+    <!-- CDN link to SlickNav CSS  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+    <!-- Link to your custom stylesheet -->
+    <link rel="stylesheet" href="main.css">
+    <!-- CDN link to jQuery (necessary for SlickNav jQuery to work -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- CDN link to SlickNav jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".nav_list").slicknav({
+                prependTo: "#mobilemenu"
+            });
+        });
+    </script>
 </head>
 
 <body>
     <div class=grid>
 
         <div class="logo">
-            <img class="logo_image" src="images/transparent_logo.png" alt="Lantern Logo" width="250" height="100">
+            <img class="logo_image" src="transparent_logo.png" alt="Lantern Logo" width="250" height="100">
         </div>
+        <!--<nav id="mobilemenu"></nav>-->
 
         <ul class="nav_list">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../menu/index.html">Menus</a></li>
-            <li><a href="../shop/index.html">Shop</a></li>
-            <li><a href="../private-dining/dining.html">Private Dining</a></li>
-            <li><a href="../contact/contact1.html">Contact</a></li>
+            <li><a href="default.html">Home</a></li>
+            <li><a href="menus.html">Menus</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="private_dining.html">Private Dining</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <div class=line></div>
+            </li>
+           
         </ul>
-        <a class="clickable" href="../mobilemenu/index.html">
-            <img src="images/three_lines.png" width = "30" height = "30">
-        </a>
 
 
         <div class="card hours">
-            <h4 class="card-title">Hours</h4>
-            <p class="bold">Dinner:</p>
-            <p>Mon - Sat 5:30pm - 10:00pm</p>
-            <p>Sun Closed</p>
+            <h4 class="card-title">T-Shirts</h4>
+            <p class="bold">Price: $15:</p>
+             <label>Size: </label>
+                        <select id="myList">
+                            <option value="1">X-Small</option>
+                            <option value="2">Small</option>
+                            <option value="3">Medium</option>
+                            <option value="4">Large</option>
+                            <option value="1">X-Large</option>
+                             </select>
+            <label>Quantity:</label>
+                        <select id="myList">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="2">3</option><option value="2">4</option><option value="2">5</option><option value="2">6</option><option value="2">7</option><option value="2">8</option><option value="2">9</option><option value="2">10</option>
+            </select>
             <br>
             <p class="bold">Bar w/ late night menu:</p>
             <p>Mon - Thurs Until 11:00pm</p>
@@ -53,7 +82,7 @@
             <h4 class="card-title">Location</h4>
             <p class="bold">423 West Franklin Street</p>
             <p>Chapel Hill, NC 27519</p>
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3231.493937988936!2d-79.06450998498144!3d35.910408080141494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acc2e1a2be97ab%3A0x2ac3a88b0ae7c5e9!2s423%20W%20Franklin%20St%2C%20Chapel%20Hill%2C%20NC%2027516!5e0!3m2!1sen!2sus!4v1575477836750!5m2!1sen!2sus" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <img class="map" src="map.png" alt="map" width="300" height="300">
             <br>
             <p>Complimentary valet parking is available Wednesday - Saturday directly across the street.
             </p>
@@ -144,7 +173,7 @@
             <form>
                 <fieldset>
                     <p>
-                        <label>Party Size : </label>
+                        <label>Party Size  :    </label>
                         <select id="myList">
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -163,16 +192,21 @@
                 </fieldset>
             </form>
             <br>
-            <input type="button" class="button" value="Make a Reservation" onClick = "window.location.reload();">
+            <input type="button" class="button" value="Make a Reservation">
         </div>
+
+
+
 
         <footer>
             <ul>
-                <li><a class="white_link" href="../about/index.html">About</a></li>
+                <li><a class="white_link" href="default.html">About</a></li>
                 <div class="circle"></div>
-                <li><a class="white_link" href="../community/index.html">Community</a></li>
+                <li><a class="white_link" href="menus.html">Book</a></li>
                 <div class="circle"></div>
-                <li><a class="white_link" href="../press/press.html">Press</a></li>
+                <li><a class="white_link" href="shop.html">Community</a></li>
+                <div class="circle"></div>
+                <li><a class="white_link" href="private_dining.html">Press</a></li>
             </ul>
 
             <div class=socialmedia>
@@ -195,6 +229,4 @@
     </div>
 
 
-</body>
-
-</html>
+</body></html>

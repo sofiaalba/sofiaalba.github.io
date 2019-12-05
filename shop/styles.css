@@ -16,24 +16,14 @@ h4{
 .logo {
     grid-column: 1 / 3;
     grid-row: 1 / 2;
-    margin-top: -1vh;
-    margin-left: 2vw;
-   
-}
-
-.logo_image{
-    height: 79px;
+    padding-top: 10px;
+    margin-left: 8px;
 }
 img {
     margin-top: 2vh;
 }
 .totebag{
-    margin-top: 2vh;
-}
-
-.card location > label {
-     margin-top: 6vh;
-    
+    margin-top: 9vh;
 }
 .reservation{
     text-align: center;
@@ -55,7 +45,7 @@ h5{
     display: flex;
     justify-content: flex-end;
     list-style: none;
-    padding-top: 10px;
+    padding-top: 15px;
     
 }
 
@@ -248,11 +238,6 @@ ul {
 }
 
 
-.card > h5 {
-     margin-top: 9vh;
-}
-
-
 @media only screen and (max-width: 1300px) {
     .map {
         height: 250px;
@@ -271,13 +256,7 @@ ul {
     }
 }
 
-@media only screen and (max-width: 1102px) {
-   
-    .baby {
-        margin-top: -5vh;
-    }
-    
-    
+@media only screen and (max-width: 850px) {
     body {
         font-size: .8em;
     }
@@ -337,18 +316,14 @@ ul {
         grid-column: 7 / 8;
         grid-row: 1 / 2;
         visibility: visible;
-
-
-    }
     }
         h5{
         margin-top: -25vh;
             text-align: center;
         }
-   
-
- 
-
+    .baby{
+        margin-top: -8vh;
+    }
     .tshirt{
         margin-top: -3vh;
     }
