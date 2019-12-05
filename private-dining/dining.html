@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lantern Restaurant</title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="dining.css">
+</head>
+
+<body>
+    <div class=grid>
+
+        <div class="logo">
+            <img class="logo_image" src="images/transparent_logo.png" alt="Lantern Logo" width="200">
+        </div>
+
+        <ul class="nav_list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../menu/index.html">Menus</a></li>
+            <li><a href="../shop/index.html">Shop</a></li>
+            <li><a href="../private-dining/dining.html">Private Dining</a></li>
+            <li><a href="../contact/contact1.html">Contact</a></li>
+        </ul>
+        <a class="clickable" href="../mobilemenu/index.html">
+            <img src="images/three_lines.png" width="30" height="30">
+        </a>
+
+        <div class="awards">
+            <img src="images/circle1.png" alt="search" width="115" height="115">
+            <img src="images/circle2.png" alt="search" width="115" height="115">
+            <img src="images/circle4.png" alt="search" width="115" height="115">
+            <img src="images/circle3.png" alt="search" width="115" height="115">
+            <img src="images/circle5.png" alt="search" width="115" height="115">
+        </div>
+
+        <div class="photo-gallery">
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img class="photo" src="images/gallery1.png" style="width:100%">
+                </div>
+
+                <div id="hidden" class="mySlides fade">
+                    <img class="photo" src="images/gallery2.png" style="width:100%">
+                </div>
+
+                <div id="hidden" class="mySlides fade">
+                    <img class="photo" src="images/gallery3.png" style="width:100%">
+                </div>
+
+                <div id="hidden" class="mySlides fade">
+                    <img class="photo" src="images/gallery4.png" style="width:100%">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                captionText.innerHTML = dots[slideIndex - 1].alt;
+            }
+
+        </script>
+
+
+        <ul class="quotes">
+            <li class="quote">
+                <p>"It is without question a favorite of my board members, most of whom fly in from San Francisco. Your presentation screening capabilities are top-notch, and the service is impeccable."</p>
+                <p>- Jud Bowman</p>
+            </li>
+            <li class="quote non-mobile">
+                <p>"We were thrilled with our experience at Lantern Table. The food was characteristically delightful and considerate of dietary needs, the staff was lovely, and the environment was just right. Our wedding guests left feeling treated to a feast and the warmth of the space contributed to a touching experience."</p>
+                <p>- Jeff Barney and Cameron Ratliff</p>
+            </li>
+            <li class="quote">
+                <p>"Lantern specializes in what I call ‘young cooking.’ I can taste all the energy and venturesomeness coiled, youthful, behind those swinging doors." </p>
+                <p>- Allan Gurganus</p>
+            </li>
+            <li class="quote non-mobile">
+                <p>"Today, at the center of a web of artisanal producers, [Andrea] transforms their ultra fresh ingredients into dishes from China, Japan, Korea, Thailand, Vietnam and India. Her food remains true to those traditions, yet it is distinctly modern and distinctly hers."</p>
+                <p>- Gourmet</p>
+            </li>
+            <li class="quote">
+                <p>"Unpretentious sophistication is always a surprise to stumble upon. That’s Lantern. The dishes are generous, joyous and expressive." </p>
+                <p>- Neal Rosenthal</p>
+            </li>
+        </ul>
+
+        <div class="dining-costs">
+            <h2>Dining at Lantern Table</h2>
+            <h4>Lantern's private dining menus emphasize locally sourced ingredients, seasonal highlights, and year-round favorites.</h4>
+            <div class="cards">
+                <div class="card">
+                    <p class="italics">starting at</p>
+                    <p class="money">$90</p>
+                    <br>
+                    <p class="bold">Chef's Seasonal Tasting Menu</p>
+                    <p>five courses</p>
+                </div>
+                <div class="card">
+                    <p class="italics">starting at</p>
+                    <p class="money">$75</p>
+                    <br>
+                    <p class="bold">Amuse</p>
+                    <p>A seasonal gift from the kitchen</p>
+                    <br>
+                    <p class="bold">Appetizer</p>
+                    <p>A choice of three appetizers</p>
+                    <br>
+                    <p class="bold">Entree</p>
+                    <p>A choice of three entrees</p>
+                    <br>
+                    <p class="bold">Dessert</p>
+                    <p>A choice of three desserts</p>
+                </div>
+                <div class="card">
+                    <p class="italics">starting at</p>
+                    <p class="money">$65</p>
+                    <br>
+                    <p class="bold">Appetizer</p>
+                    <p>Three appetizers served family-style</p>
+                    <br>
+                    <p class="bold">Entree</p>
+                    <p>A choice of three entrees</p>
+                    <br>
+                    <p class="bold">Dessert</p>
+                    <p>A choice of three desserts</p>
+                </div>
+                <div class="card">
+                    <p class="italics">starting at</p>
+                    <p class="money">$55</p>
+                    <br>
+                    <p class="bold">Appetizer</p>
+                    <p>Three appetizers served family-style</p>
+                    <br>
+                    <p class="bold">Entree</p>
+                    <p>Two entrees served family-style</p>
+                    <br>
+                    <p class="bold">Dessert</p>
+                    <p>One desserts</p>
+                </div>
+                <div class="card no-border">
+                    <p class="money">Cocktail Dining</p>
+                    <br>
+                    <p class="bold">Heavy Appetizers</p>
+                    <p>Nine dishes - passed and stationed $55</p>
+                    <br>
+                    <p class="bold">Light Appetizers</p>
+                    <p>Five dishes - passed and stationed $35</p>
+                </div>
+            </div><br><br>
+            <div class="notes">
+                <p>Minimum event charges apply to all private dining reservations and vary according to night of the week. Please inquire.</p>
+                <p>We gladly accommodate most dietary requests, including vegetarian, vegan, paleo, gluten, dairy and shell-fish free.</p>
+                <p>Cocktail appetizers and expanded menu selections may be added to any menu for an additional charge.</p>
+                <p>All beverages charged a la carte. Lantern’s beverage director will work with you to craft a personalized wine experience highlighting small family farms and organic biodynamic producers.</p>
+            </div>
+        </div>
+
+        <footer>
+            <ul>
+                <li><a class="white_link" href="../about/index.html">About</a></li>
+                <div class="circle"></div>
+                <li><a class="white_link" href="../community/index.html">Community</a></li>
+                <div class="circle"></div>
+                <li><a class="white_link" href="../press/press.html">Press</a></li>
+            </ul>
+
+            <div class=socialmedia>
+                <a href="https://twitter.com/lanternnc?lang=en">
+                    <i id=social class="fab fa-twitter-square fa-2x" style="color:#000000;"></i></a>
+                <a href="https://www.instagram.com/lanternrestaurant/">
+                    <i id=social class="fab fa-instagram fa-2x" style="color:#000000;"></i></a>
+                <a href="https://www.facebook.com/LanternNC/?ref=br_rs">
+                    <i id=social class="fab fa-facebook-square fa-2x" style="color:#000000;"></i>
+                </a>
+            </div>
+
+            <div class=footer_words>
+                <h2>Connect with us to hear more about menu items, events, and updates!</h2>
+                <h3>The Lantern Restaurant</h3>
+                <h3>Copyright</h3>
+            </div>
+
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
