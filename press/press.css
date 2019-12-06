@@ -47,6 +47,7 @@ a {
 .one {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    
 }
 
 .two {
@@ -63,12 +64,16 @@ a {
 .four {
     grid-column: 5 / 8;
     grid-row: 2 / 3;
+    
 }
 
 .blurb {
     min-height: 28vh;
     min-width: 32vh;
     margin-left: 1vw;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 .magazines {
@@ -83,6 +88,9 @@ a {
     min-height: 28vh;
     min-width: 20vh;
     margin-left: 1vw;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 .magazines,
@@ -105,6 +113,10 @@ a {
     font-size: 1.1em;
 }
 
+h2 {
+    margin: 0 2vw;
+}
+
 footer {
     grid-column: 1 / 8;
     grid-row: 4 / 5;
@@ -114,11 +126,11 @@ footer {
 }
 
 footer ul {
-    padding: 15px 0;
+    padding: 30px 0;
     display: flex;
     justify-content: space-around;
     list-style: none;
-    margin-right: 4vw;
+    margin: 0 3vw;
 }
 
 footer a {
@@ -186,9 +198,9 @@ footer a {
 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
     .grid {
-        grid-template-rows: 15vh 330vh 330vh 50vh;
+        grid-template-rows: 15vh 330vh 350vh 50vh;
     }
 
     .nav_list {
@@ -264,7 +276,7 @@ footer a {
 
 @media only screen and (max-width: 415px) {
     .grid {
-        grid-template-rows: 15vh 423vh 423vh 50vh;
+        grid-template-rows: 15vh 423vh 450vh 50vh;
     }
 
     .one {
