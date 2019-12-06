@@ -38,7 +38,10 @@ a:visited {
     grid-template-rows: repeat(32, 7vh);
 }
 
+.footer_links{
+     font-family: 'Dosis', sans-serif;
 
+}
 
 header {
     grid-column: 1 / 7;

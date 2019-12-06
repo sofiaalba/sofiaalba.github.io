@@ -47,7 +47,6 @@ a {
 .one {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    
 }
 
 .two {
@@ -58,13 +57,12 @@ a {
 .three {
     grid-column: 4 / 5;
     grid-row: 2 / 3;
-    margin-left: 10vw;
 }
 
 .four {
     grid-column: 5 / 8;
     grid-row: 2 / 3;
-    
+
 }
 
 .blurb {
@@ -165,7 +163,9 @@ footer a {
 }
 
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1050px) {
+
+
     .blurb {
         min-height: 25vh;
         min-width: 30vh;
@@ -175,20 +175,15 @@ footer a {
         min-height: 25vh;
         min-width: 18vh;
     }
-}
-
-@media only screen and (max-width: 850px) {
-    .three img {
-        margin-left: 2vh;
-    }
 
     body {
         font-size: .85em;
     }
+}
 
-    .blurb {
-        min-height: 25vh;
-        min-width: 24vh;
+@media only screen and (max-width: 900px) {
+    .three img {
+        margin-left: 2vh;
     }
 
     .magazines img {
@@ -196,11 +191,12 @@ footer a {
         min-width: 18vh;
     }
 
-}
+    body {
+        font-size: .8em;
+    }
 
-@media only screen and (max-width: 850px) {
     .grid {
-        grid-template-rows: 15vh 330vh 350vh 50vh;
+        grid-template-rows: 15vh 340vh 350vh 50vh;
     }
 
     .nav_list {
@@ -246,6 +242,7 @@ footer a {
         margin-left: 1vw;
         margin-right: 5vw;
         margin-bottom: 2vh;
+        padding-right: 4px;
     }
 
     .magazines {
@@ -276,7 +273,7 @@ footer a {
 
 @media only screen and (max-width: 415px) {
     .grid {
-        grid-template-rows: 15vh 423vh 450vh 50vh;
+        grid-template-rows: 15vh 432vh 450vh 50vh;
     }
 
     .one {
@@ -331,10 +328,10 @@ footer a {
         width: 5px;
         height: 5px;
     }
+}
 
-    @media only screen and (max-height: 820px) and (min-height : 810px){
-        .blurb {
-            min-width: 17vh;
-        }
+@media only screen and (max-height: 820px) and (min-height : 810px) {
+    .blurb {
+        min-width: 17vh;
     }
 }

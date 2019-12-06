@@ -162,7 +162,10 @@ h1 {
 }
 
 
+.footer_links{
+     font-family: 'Dosis', sans-serif;
 
+}
 
 footer {
     grid-column: 1 / 7;
